@@ -1,3 +1,25 @@
 .confirma{
 	border: none;
 }
+
+.pesquisa{
+	border: solid 1px #CCC;
+	border-radius: 8px;
+}
+
+.menu{
+
+}
+
+.menu:hover{
+	cursor: pointer;
+}
+
+.menu2{
+	border: none;
+	background: none;
+}
+
+.menu2:hover{
+	cursor: pointer;
+}
