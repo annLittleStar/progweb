@@ -1,5 +1,18 @@
 .confirma{
 	border: none;
+	border-radius: 8px;
+	background-color: lime;
+}
+
+.confirma:hover{
+	background-color: darkgreen;
+	cursor: pointer;
+	color: white;
+}
+
+.textoLogin{
+	border: solid 1px #CCC;
+	border-radius: 8px;
 }
 
 .pesquisa{
