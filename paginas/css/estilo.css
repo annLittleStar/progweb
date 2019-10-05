@@ -1,6 +1,6 @@
 .confirma{
 	border: none;
-	border-radius: 8px;
+	border-radius: 6px;
 	background-color: lime;
 }
 
@@ -12,12 +12,12 @@
 
 .textoLogin{
 	border: solid 1px #CCC;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 
 .pesquisa{
 	border: solid 1px #CCC;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 
 .menu{
@@ -54,10 +54,19 @@
 
 .tabela3{
 	height: 100%;
-	background-color: cyan;
+	background-color: gray;
 	display: inline-block;
 	margin-left: -8px;
 	margin-bottom: -8px;
+	border-collapse: collapse;
+}
+
+.tabela3 tr:nth-child(2n){
+	background-color: blue;
+}
+
+.tabela3 tr:nth-child(2n+1){
+	background-color: lightblue;
 }
 
 .tabela4{
