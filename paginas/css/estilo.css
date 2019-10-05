@@ -36,3 +36,34 @@
 .menu2:hover{
 	cursor: pointer;
 }
+
+.tabela1{
+	background-color: cyan;
+	display: block;
+	margin-top: -8px;
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+.tabela2{
+	background-color: gray;
+	display: block;
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+.tabela3{
+	height: 100%;
+	background-color: cyan;
+	display: inline-block;
+	margin-left: -8px;
+	margin-bottom: -8px;
+}
+
+.tabela4{
+	height: 100%;
+	width: 100%;
+	background-color: lightpink;
+	margin-right: -8px;
+	margin-bottom: -8px;
+}
