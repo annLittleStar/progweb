@@ -36,7 +36,7 @@
 .menu2:hover{
 	cursor: pointer;
 }
-
+/*
 .tabela1{
 	background-color: cyan;
 	display: block;
@@ -51,14 +51,9 @@
 	margin-right: -8px;
 	margin-left: -8px;
 }
-
+*/
 .tabela3{
-	height: 100%;
-	width: 150px;
-	background-color: gray;
 	display: inline-block;
-	margin-left: -8px;
-	margin-bottom: -8px;
 	border-collapse: collapse;
 }
 
@@ -69,11 +64,63 @@
 .tabela3 tr:nth-child(2n+1){
 	background-color: lightblue;
 }
-
+/*
 .tabela4{
 	height: 100%;
 	width: 100%;
 	background-color: lightpink;
+	margin-left: 140px;
+	margin-bottom: 600px;
+	margin-top: -616px;
+}
+*/
+.div1{
+	width: 100%;
+	height: 30px;
+	background-color: cyan;
+	display: table;
+	position: static;
+	float: top;
+}
+
+.div2{
+	width: 100%;
+	height: 25px;
+	background-color: gray;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: none;
+	float: bottom;
+}
+
+.divCN{
+	overflow: auto;
+	margin-top: -8px;
 	margin-right: -8px;
+	margin-left: -8px;
+
+}
+
+.div3{
+	width: 19%;
+	height: 100%;
+	background-color: gray;
+	display: inline-block;
+	position: static;
+	float: left;
+}
+
+.div4{
+	width: 81%;
+	height: 100%;
+	background-color: yellow;
+	float: right;
+}
+
+.divME{
+	overflow: auto;
 	margin-bottom: -8px;
+	margin-right: -8px;
+	margin-left: -8px;
 }
