@@ -1,18 +1,37 @@
 .confirma{
-	border: none;
-	border-radius: 6px;
-	background-color: lime;
+	height: 50px;
+	width: 300px;
+	background-color: #00FA9A;
+	font-style:arial; 
+	text-align: center;
+	text-transform: capitalize;
+	border-style: solid 2px #CCC;
+	border-radius: 5px;
+	border-width: thin;
+	border-color: #00FA9A;
+	cursor: pointer;
+	font-size: 150%;
 }
 
 .confirma:hover{
-	background-color: darkgreen;
+	background-color: #3CB371;;
+	border-color: #2E8B57;
 	cursor: pointer;
 	color: white;
 }
 
 .textoLogin{
-	border: solid 1px #CCC;
-	border-radius: 6px;
+	height: 50px;
+	width: 300px;
+	background-color: #ADD8E6;
+	font-style:arial; 
+	text-align: center;
+	text-transform: capitalize;
+	border-style: solid 2px #CCC;
+	border-radius: 5px;
+	border-width: thin;
+	border-color: #87CEFA;
+	font-size: 150%;
 }
 
 .pesquisa{
@@ -29,6 +48,9 @@
 }
 
 .menu2{
+	width: 200px;
+	height: 40px;
+	text-align: left;
 	border: none;
 	background: none;
 }
@@ -79,7 +101,7 @@
 	height: 30px;
 	background-color: cyan;
 	display: table;
-	position: static;
+	position: relative;
 	float: top;
 }
 
@@ -94,33 +116,37 @@
 	float: bottom;
 }
 
-.divCN{
+.divSuperior{
+	width: 1366px;
+	height: 70px;
 	overflow: auto;
 	margin-top: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
+	position: relative;
 
 }
 
 .div3{
-	width: 19%;
-	height: 100%;
-	background-color: gray;
+	width: 234px;
+	height: 548px;
+	background-color: #D3D3D3;
 	display: inline-block;
-	position: static;
 	float: left;
+	z-index: auto;
 }
 
 .div4{
-	width: 81%;
-	height: 100%;
-	background-color: yellow;
+	width: 1115px;
+	height: 548px;
+	background-color: #00FA9A;
 	float: right;
 }
 
-.divME{
+.divInferior{
 	overflow: auto;
 	margin-bottom: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
+	position: relative;
 }
