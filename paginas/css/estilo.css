@@ -52,7 +52,7 @@
 	height: 30px;
 	text-align: left;
 	border: none;
-	background: white;
+	background: none;
 }
 
 .menu2:hover{
@@ -64,8 +64,7 @@
 	height: 25px;
 	text-align: left;
 	border: none;
-	background: white;
-	border-bottom: 30px black;
+	background: none;
 }
 
 .novaMsn:hover{
