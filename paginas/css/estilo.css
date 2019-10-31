@@ -50,12 +50,13 @@
 }
 
 .menu2{
-	width: 150px;
+	width: 115px;
 	height: 30px;
 	text-align: left;
 	border: none;
 	background: none;
 	float: left;
+	margin-top: 4.5px;
 }
 
 .menu2:hover{
@@ -69,12 +70,11 @@
 	border: none;
 	background: none;
 }
-
+/*
 .novaMsn:hover{
 	cursor: pointer;
 }
 
-/*
 .tabela1{
 	background-color: cyan;
 	display: block;
@@ -115,6 +115,7 @@
 .div0{
 	position: relative;
 	margin: -8;
+	display: block;
 }
 
 .div1{
@@ -153,6 +154,7 @@
 	margin-left: -8px;
 	position: relative;
 */	float: top;
+	display: block;
 }
 /*
 .div3{
@@ -168,21 +170,23 @@
 .div3{
 	margin: 0;
 	padding: 0;
-	width: 15%;
-	background-color: lightpink;
-	position: fixed;
-	height: 100%;
-	overflow: hidden;
+	width: 12%;
+/*	background-color: lightpink;
+*/	position: fixed;
+/*	height: 100%;
+*/	overflow: hidden;
 	float: left;
 }
 
 .div4{
-	width: 85%;
+	margin: 0;
+	padding: 0;
+	width: 88%;
 	height: 100%;
 	background-color: #00FA9A;
 	overflow: auto;
 	float: right;
-	position: sticky;
+	position: relative;
 }
 
 .divInferior{
@@ -192,6 +196,8 @@
 	margin-left: -8px;
 */	position: relative;
 	float: bottom;
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 .imgMenu{
@@ -203,6 +209,10 @@
 	margin: 10px;
 	display: inline-block;
 	float: left;
+}
+
+.divMenu:hover{
+	cursor: pointer;
 }
 
 .menuIcon{
@@ -219,6 +229,10 @@
 	float: left;
 }
 
+.menuDiv:hover{
+	cursor: pointer;
+}
+
 .azulC{
 	background-color: lightblue;
 	display: inline-block;
@@ -230,10 +244,11 @@
 	display: inline-block;
 	width: 100%;
 }
-
+/*
 .div3 a{
 	display: inline-block;
 	color: black;
 	text-decoration: none;
 	margin-top: 10px;
 }
+*/
