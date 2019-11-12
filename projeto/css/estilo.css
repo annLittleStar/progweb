@@ -101,7 +101,7 @@
 	height: 30px;
 	background-color: cyan;
 	display: table;
-	position: relative;
+	position: fixed;
 	float: top;
 }
 
@@ -123,7 +123,6 @@
 	margin-top: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
-	position: relative;
 
 }
 
@@ -148,5 +147,4 @@
 	margin-bottom: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
-	position: relative;
 }
