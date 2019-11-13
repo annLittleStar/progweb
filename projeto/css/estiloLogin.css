@@ -1,0 +1,62 @@
+.confirma{
+	height: 50px;
+	width: 300px;
+	background-color: #00FA9A;
+	font-family:Centaur; 
+	text-align: center;
+	text-transform: capitalize;
+	border-style: solid 2px #CCC;
+	border-radius: 5px;
+	border-width: thin;
+	border-color: #3CB371;
+	cursor: pointer;
+	font-size: 150%;
+}
+
+.confirma:hover{
+	background-color: #3CB371;;
+	border-color: #00FA9A;
+	cursor: pointer;
+	color: white;
+}
+
+.textoLogin{
+	height: 50px;
+	width: 300px;
+	background-color: #FFC9F4;
+	font-family:Centaur; 
+	text-align: center;
+	text-transform: capitalize;
+	border-style: solid 2px #CCC;
+	border-radius: 5px;
+	border-width: thin;
+	border-color: #FF92E9;
+	font-size: 150%;
+}
+
+h1{
+	font-family:Freestyle Script; 
+	text-align: center;
+	color: #FF92E9;
+	font-size: 70px;
+}
+
+h3{
+	font-family:Centaur; 
+	text-align: center;
+	color: black;
+	font-size: 20px;
+}
+
+table{
+	border: 2px solid;
+	border-color: #804974;
+	border-radius: 10px;
+	padding: 35px;
+	background-color: white;
+	margin-top: 6%;
+}
+
+body{
+	background-image: "../imagens/sakuraFundo.png";
+}
