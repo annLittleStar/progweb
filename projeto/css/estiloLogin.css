@@ -58,5 +58,7 @@ table{
 }
 
 body{
-	background-image: "../imagens/sakuraFundo.png";
+	background-image: url("../imagens/sakuraFundoV2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }

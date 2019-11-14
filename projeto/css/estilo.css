@@ -1,8 +1,13 @@
+body{
+	margin: 0px;
+}
+
 .pesquisa{
 	border: solid 1px #CCC;
 	border-radius: 6px;
 	float: left;
 	margin-top: 10px;
+	font-family:Centaur; 
 }
 
 .menu{
@@ -21,6 +26,7 @@
 	background: none;
 	float: left;
 	margin-top: 4.5px;
+	font-family:Centaur; 
 }
 
 .menu2:hover{
@@ -34,53 +40,13 @@
 	border: none;
 	background: none;
 	color: white;
-}
-/*
-.novaMsn:hover{
-	cursor: pointer;
+	font-family:Centaur; 
 }
 
-.tabela1{
-	background-color: cyan;
-	display: block;
-	margin-top: -8px;
-	margin-right: -8px;
-	margin-left: -8px;
-}
-
-.tabela2{
-	background-color: gray;
-	display: block;
-	margin-right: -8px;
-	margin-left: -8px;
-}
-
-.tabela3{
-	display: inline-block;
-	border-collapse: collapse;
-}
-
-.tabela3 tr:nth-child(2n){
-	background-color: blue;
-}
-
-.tabela3 tr:nth-child(2n+1){
-	background-color: lightblue;
-}
-
-.tabela4{
-	height: 100%;
-	width: 100%;
-	background-color: lightpink;
-	margin-left: 140px;
-	margin-bottom: 600px;
-	margin-top: -616px;
-}
-*/
 .div0{
 	height: 100%;
+	width: 100%;
 	position: relative;
-	margin: -8;
 	display: block;
 	overflow: hidden;
 }
@@ -110,42 +76,22 @@
 	text-decoration: none;
 	margin-top: 5px;
 	margin-left: 10PX;
+	font-family:Centaur; 
 }
 
 .divSuperior{
-/*	width: 100%;
-*/	overflow: hidden;
-/*	margin-top: -8px;
-	margin-right: -8px;
-	margin-left: -8px;
-<<<<<<< HEAD:projeto/css/estilo.css
-
-=======
-	position: relative;
-*/	float: top;
+	overflow: hidden;
+	float: top;
 	display: block;
->>>>>>> f010e2fa26cad415c756edaf16e2bc18d07b41e7:paginas/css/estilo.css
 }
-/*
-.div3{
-	width: 15%;
-	height: 548px;
-	background-color: #D3D3D3;
-	display: inline-block;
-	float: left;
-	z-index: auto;
-}
-*/
 
 .div3{
 	margin: 0;
 	padding: 0;
 	width: 15%;
 	height: 100%;
-/*	background-color: lightpink;
-*/	position: fixed;
-/*	height: 100%;
-*/	overflow: hidden;
+	position: fixed;
+	overflow: hidden;
 	float: left;
 }
 
@@ -154,28 +100,28 @@
 	padding: 0;
 	width: 85%;
 	height: 100%;
-	background-color: #00FA9A;
 	overflow: hidden;
 	float: right;
+	position: relative;
 }
 
 .divInferior{
 	overflow: hidden;
-/*	margin-bottom: -8px;
-	margin-right: -8px;
-	margin-left: -8px;
-<<<<<<< HEAD:projeto/css/estilo.css
-}
-=======
-*/	position: relative;
+	position: relative;
 	float: bottom;
-	display: grid;
-	grid-template-columns: auto auto;
 }
 
 .imgMenu{
 	height: 30px;
 	width: 30px;
+}
+
+.divMenu0{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: auto;	
 }
 
 .divMenu{
@@ -209,7 +155,7 @@
 .azulC{
 	background-color: lightblue;
 	display: inline-block;
-	width: 100%;	
+	width: 100%;
 }
 
 .azulE{
@@ -217,12 +163,10 @@
 	display: inline-block;
 	width: 100%;
 }
-/*
-.div3 a{
-	display: inline-block;
-	color: black;
-	text-decoration: none;
-	margin-top: 10px;
+
+.divLista0{
+	height: 100%;
+	width: 100%;
+	background-color: gray;
+	overflow: auto;
 }
-*/
->>>>>>> f010e2fa26cad415c756edaf16e2bc18d07b41e7:paginas/css/estilo.css
