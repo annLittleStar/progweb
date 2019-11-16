@@ -1,12 +1,30 @@
 $(document).ready(function(){
-	//para o botão CONFIRMA
+	//para o botao CONFIRMA
 
 	$("#confirma").click(function(){
 		window.location.href = "paginas/caixaDeEntrada.html"
 	});
-});
 
-$(document).ready(function(){
+	$("#caixaEntrada").click(function(){
+		return $("#teste").val("123");
+	})
+
+	$("#favoritos").click(function(){
+		return $("#teste").val("321");
+	})
+
+	$("#lixoEletronico").click(function(){
+		return $("#teste").val("111");
+	})
+
+	$("#rascunho").click(function(){
+		return $("#teste").val("331");
+	})
+
+	$("#enviados").click(function(){
+		return $("#teste").val("213");
+	})
+
 	$("#menu2").click(function(){
 
 		var remetente = $("#remetente").val();
