@@ -59,6 +59,9 @@ body{
 	position: relative;
 	display: block;
 	overflow: hidden;
+	background-image: url("../imagens/sakuraFundoMenu.png");
+	background-repeat: no-repeat;
+	background-position: -63% 75%;
 }
 
 .div1{
@@ -78,10 +81,10 @@ body{
 	padding-bottom: 5px;
 	margin: none;
 	float: bottom;
-	background-image: url("../imagens/sakuraFundoMenu.png");
+/*	background-image: url("../imagens/sakuraFundoMenu.png");
 	background-repeat: no-repeat;
 	background-position: -70% 15%;
-}
+*/}
 
 .div2 a{
 	display: inline-block;
@@ -146,10 +149,10 @@ body{
 	display: block;
 	overflow: auto;	
 /*	background-color: #00FA9A;
-*/	background-image: url("../imagens/sakuraFundoMenu.png");
+*//*	background-image: url("../imagens/sakuraFundoMenu.png");
 	background-repeat: no-repeat;
 	background-position: 50% 225%;
-}
+*/}
 
 .divMenu{
 	margin: 10px;
@@ -200,4 +203,8 @@ body{
 	width: 100%;
 	background-color: #3CB371;
 	overflow: auto;
+}
+
+.titulo{
+	padding-left: 25px;
 }

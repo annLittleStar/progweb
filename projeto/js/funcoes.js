@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	//para o botao CONFIRMA
 
-	$("#confirma").click(function(){
+	entra();
+
+/*	$("#confirma").click(function(){
 		window.location.href = "paginas/caixaDeEntrada.html"
 	});
-
+*/
 	$("#caixaEntrada").click(function(){
 		return $("#teste").val("123");
 	})
@@ -76,3 +78,27 @@ $(document).ready(function(){
 		})
 	})
 })
+
+//testar se isso funciona
+function entra(){
+
+	$("#confirma").click(function(){
+
+		$.ajax({
+			type: "POST",
+			url: "php/parte02.php",
+			dataType: "json",
+			data:{
+				user: $("#usuario").val(),
+				pass: $("#senha").val()
+			},
+			success: function(retorno){
+				if (retorno.resultado == "valido") {
+					window.location.href = "paginas/caixaDeEntrada.html";
+				}else{
+					alert("Usuario invalido");
+				}
+			}
+		})
+	});
+}
