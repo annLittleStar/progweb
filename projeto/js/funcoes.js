@@ -58,17 +58,11 @@ $(document).ready(function(){
 
 			
 			var conteudo = "";
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td>" + retorno.remetente + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "<tr>";
-			conteudo += "<td>" + retorno.assunto + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "<tr>";
-			conteudo += "<td>" + retorno.trecho + "</td>";
+			conteudo += "<table class='tabelaLista'>";
+			conteudo += "<tr class='linha'>";
+			conteudo += "<td class='td1'>" + retorno.remetente + "</td>";
+			conteudo += "<td class='td2'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='td3'>" + retorno.trecho + "</td>";
 			conteudo += "</tr>";
 
 			conteudo += "</table>";

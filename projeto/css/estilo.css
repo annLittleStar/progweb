@@ -208,3 +208,37 @@ body{
 .titulo{
 	padding-left: 25px;
 }
+
+.usuario{
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	margin: 3px 0;
+	border-radius: 30px;
+	float: right;
+	margin-right: 5px;
+}
+
+.tabela{
+	background-color: pink;
+	width: 100%;
+}
+
+.linha{
+	border-style: 2px bold #CCC;
+}
+
+.td1{
+	background-color: white;
+	width: 20%;
+}
+
+.td2{
+	background-color: blue;
+	width: 25%;
+}
+
+.td3{
+	background-color: cyan;
+	width: 55%;
+}
