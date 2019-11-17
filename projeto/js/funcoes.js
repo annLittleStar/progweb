@@ -6,11 +6,11 @@ $(document).ready(function(){
 /*	$("#confirma").click(function(){
 		window.location.href = "paginas/caixaDeEntrada.html"
 	});
-*/
+
 	$("#caixaEntrada").click(function(){
 		return $("#teste").val("123");
 	})
-
+*/
 	$("#favoritos").click(function(){
 		return $("#teste").val("321");
 	})
@@ -48,11 +48,11 @@ $(document).ready(function(){
 		})
 	})
 
-	$("#menu02").click(function(){
+	$("#caixaEntrada").click(function(){
 		$.ajax({
 			type:"POST",
 			dataType: "json",
-			url:"../php/parte02.php",
+			url:"../php/cxEntrada.php",
 		
 		success: function(retorno){
 
@@ -86,7 +86,7 @@ function entra(){
 
 		$.ajax({
 			type: "POST",
-			url: "php/parte02.php",
+			url: "php/validaLogin.php",
 			dataType: "json",
 			data:{
 				user: $("#usuario").val(),
