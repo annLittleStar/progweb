@@ -7,7 +7,7 @@ $(document).ready(function(){
 		window.location.href = "paginas/caixaDeEntrada.html"
 	});
 
-	$("#caixaEntrada").click(function(){
+/*	$("#caixaEntrada").click(function(){
 		return $("#teste").val("123");
 	})
 */
@@ -48,6 +48,7 @@ $(document).ready(function(){
 		})
 	})
 
+//chama a lista de Emails da Caixa de Entrada:
 	$("#caixaEntrada").click(function(){
 		$.ajax({
 			type:"POST",
@@ -56,13 +57,172 @@ $(document).ready(function(){
 		
 		success: function(retorno){
 
-			
 			var conteudo = "";
-			conteudo += "<table class='tabelaLista'>";
-			conteudo += "<tr class='linha'>";
-			conteudo += "<td class='td1'>" + retorno.remetente + "</td>";
-			conteudo += "<td class='td2'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='td3'>" + retorno.trecho + "</td>";
+			//linha01
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha02
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha03
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha04
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha05
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha06
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha07
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha08
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha09
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha10
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha11
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha12
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+			conteudo += "</tr>";
+
+			conteudo += "</table>";
+
+			//linha13
+			conteudo += "<table>";
+			conteudo += "<tr>";
+			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+			conteudo += "<td class='l01o1'>" + "    " + "</td>";
+			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
 			conteudo += "</tr>";
 
 			conteudo += "</table>";
@@ -74,6 +234,7 @@ $(document).ready(function(){
 })
 
 //testar se isso funciona
+//validação de login
 function entra(){
 
 	$("#confirma").click(function(){
@@ -90,7 +251,7 @@ function entra(){
 				if (retorno.resultado == "valido") {
 					window.location.href = "paginas/caixaDeEntrada.html";
 				}else{
-					alert("Usuario invalido");
+					alert("Usuario ou senha incorretos!");
 				}
 			}
 		})

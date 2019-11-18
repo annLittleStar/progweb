@@ -1,0 +1,55 @@
+/*
+.linha{
+	border-style: 2px bold #CCC;
+}
+
+.td1{
+	background-color: white;
+	width: 20%;
+}
+
+.td2{
+	background-color: blue;
+	width: 25%;
+}
+
+.td3{
+	background-color: cyan;
+	width: 55%;
+}
+*/
+
+table{
+	background-color: #66CDAA;
+	width: 100%;
+	height: 6%;
+	font-size: 14px;
+	text-align: left;
+	/*
+	tem q coloca aquela linha em baixo pra dividir os emails TT
+	*/
+}
+
+.img{
+	width: 40%;
+}
+
+.l00{
+	width: 10%;
+}
+
+.l01{
+	width: 16%;
+}
+
+.l01o1{
+	width: 5%;
+}
+
+.l02{
+	width: 12%;
+}
+
+.l03{
+	width: 60%;
+}

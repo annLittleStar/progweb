@@ -218,27 +218,3 @@ body{
 	float: right;
 	margin-right: 5px;
 }
-
-.tabela{
-	background-color: pink;
-	width: 100%;
-}
-
-.linha{
-	border-style: 2px bold #CCC;
-}
-
-.td1{
-	background-color: white;
-	width: 20%;
-}
-
-.td2{
-	background-color: blue;
-	width: 25%;
-}
-
-.td3{
-	background-color: cyan;
-	width: 55%;
-}
