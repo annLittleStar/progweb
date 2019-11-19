@@ -1,16 +1,7 @@
+//para o botao CONFIRMA
 $(document).ready(function(){
-	//para o botao CONFIRMA
-
 	entra();
 
-/*	$("#confirma").click(function(){
-		window.location.href = "paginas/caixaDeEntrada.html"
-	});
-
-/*	$("#caixaEntrada").click(function(){
-		return $("#teste").val("123");
-	})
-	*/
 	$("#favoritos").click(function(){
 		return $("#teste").val("321");
 	})
@@ -29,6 +20,7 @@ $(document).ready(function(){
 
 	$("#menu2").click(function(){
 
+//para a Lista de Emails da Caixa de Entrada: 
 		var remetente = $("#remetente").val();
 		var assunto = $("#assunto").val();
 		var trecho = $("#trecho").val();
@@ -80,9 +72,7 @@ $("#caixaEntrada").click(function(){
 		}
 	})
 })
-})
 
-//testar se isso funciona
 //validação de login
 function entra(){
 

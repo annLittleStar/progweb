@@ -1,6 +1,6 @@
 <?php
 
-	$xml_string = file_get_contents("../xml/dadosLogin.xml");
+	$xml_string = file_get_contents("../xml/usuarios/usuario01/dadosLogin.xml");
 
 	$xml_objeto = simplexml_load_string($xml_string);
 
