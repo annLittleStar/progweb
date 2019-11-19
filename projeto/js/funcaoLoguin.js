@@ -1,5 +1,10 @@
 $(document).ready(function(){
-	//validação de login
+	entra();
+
+})
+
+//validação de login
+
 function entra(){
 
 	$("#confirma").click(function(){
