@@ -10,7 +10,7 @@ $(document).ready(function(){
 /*	$("#caixaEntrada").click(function(){
 		return $("#teste").val("123");
 	})
-*/
+	*/
 	$("#favoritos").click(function(){
 		return $("#teste").val("321");
 	})
@@ -49,188 +49,37 @@ $(document).ready(function(){
 	})
 
 //chama a lista de Emails da Caixa de Entrada:
-	$("#caixaEntrada").click(function(){
-		$.ajax({
-			type:"POST",
-			dataType: "json",
-			url:"../php/cxEntrada.php",
+$("#caixaEntrada").click(function(){
+	$.ajax({
+		type:"POST",
+		dataType: "json",
+		url:"../php/cxEntrada.php",
 		
 		success: function(retorno){
 
 			var conteudo = "";
-			//linha01
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
+			var c = 0;
 
-			conteudo += "</table>";
+			while(c < 13){
+				conteudo += "<table>";
+				conteudo += "<tr class='linha'>";
+				conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+				conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+				conteudo += "<td class='l01o1'>" + "    " + "</td>";
+				conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+				conteudo += "<td class='l01o1'>" + "    " + "</td>";
+				conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+				conteudo += "</tr>";
 
-			//linha02
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
+				conteudo += "</table>";
 
-			conteudo += "</table>";
-
-			//linha03
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha04
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha05
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha06
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha07
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha08
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha09
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha10
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha11
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha12
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
-
-			//linha13
-			conteudo += "<table>";
-			conteudo += "<tr>";
-			conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-			conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-			conteudo += "<td class='l01o1'>" + "    " + "</td>";
-			conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-			conteudo += "</tr>";
-
-			conteudo += "</table>";
+				c++;
+			}
 
 			$("#lista").html(conteudo);
-			}
-		})
+		}
 	})
+})
 })
 
 //testar se isso funciona
@@ -249,9 +98,14 @@ function entra(){
 			},
 			success: function(retorno){
 				if (retorno.resultado == "valido") {
+					$("#usuario").removeClass("erro");
+					$("#senha").removeClass("erro");
+					document.getElementById("aviso").innerHTML = "";
 					window.location.href = "paginas/caixaDeEntrada.html";
 				}else{
-					alert("Usuario ou senha incorretos!");
+					$("#usuario").addClass("erro");
+					$("#senha").addClass("erro");
+					document.getElementById("aviso").innerHTML = "Login ou Senha incorreto";
 				}
 			}
 		})

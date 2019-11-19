@@ -25,9 +25,14 @@ table{
 	height: 6%;
 	font-size: 14px;
 	text-align: left;
+/*	border-bottom-color: #3CB371;
 	/*
 	tem q coloca aquela linha em baixo pra dividir os emails TT
 	*/
+}
+
+.linha{
+	border-bottom-color: #3CB371;
 }
 
 .img{
