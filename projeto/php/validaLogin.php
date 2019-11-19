@@ -4,13 +4,13 @@
 
 	$xml_objeto = simplexml_load_string($xml_string);
 
-	$dados["user"] = $xml_objeto->usuario;
-	$dados["pass"] = $xml_objeto->senha;
+	$u = $xml_objeto->usuario;
+	$s = $xml_objeto->senha;
 
 	$usuario = $_POST["user"];
 	$senha = $_POST["pass"];
 
-	if ($usuario == $dados && $senha = $dados) {
+	if ($usuario == $u && $senha = $s) {
 		$retorna["resultado"] = "valido";
 	}else {
 		$retorna["resultado"] = "invalido";
