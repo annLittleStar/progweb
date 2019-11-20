@@ -80,6 +80,7 @@ body{
 	padding-bottom: 5px;
 	margin: none;
 	float: bottom;
+}
 
 .div2 a{
 	display: inline-block;
@@ -143,6 +144,7 @@ body{
 	position: relative;
 	display: block;
 	overflow: auto;	
+}
 	
 .divMenu{
 	margin: 10px;
@@ -207,4 +209,4 @@ body{
 	border-radius: 30px;
 	float: right;
 	margin-right: 5px;
-
+}

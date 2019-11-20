@@ -1,5 +1,6 @@
 //para o botao CONFIRMA
 $(document).ready(function(){
+
 	entra();
 
 	$("#favoritos").click(function(){
@@ -21,58 +22,59 @@ $(document).ready(function(){
 	$("#menu2").click(function(){
 
 //para a Lista de Emails da Caixa de Entrada: 
-		var remetente = $("#remetente").val();
-		var assunto = $("#assunto").val();
-		var trecho = $("#trecho").val();
+	var remetente = $("#remetente").val();
+	var assunto = $("#assunto").val();
+	var trecho = $("#trecho").val();
 
+	$.ajax({
+		type: "POST",
+		url: "../php/parte01.php",
+		dataType: "json",
+		data:{
+			ajaxRemetente: remetente,
+			ajaxAssunto: assunto,
+			ajaxTrecho: trecho
+		},
+		success: function(retorno){
+
+		}
+	})
+	})
+
+//chama a lista de Emails da Caixa de Entrada:
+	$("#caixaEntrada").click(function(){
 		$.ajax({
-			type: "POST",
-			url: "../php/parte01.php",
+			type:"POST",
 			dataType: "json",
-			data:{
-				ajaxRemetente: remetente,
-				ajaxAssunto: assunto,
-				ajaxTrecho: trecho
-			},
+			url:"../php/cxEntrada.php",
+			
 			success: function(retorno){
 
+				var conteudo = "";
+				var c = 0;
+
+				while(c < 13){
+					conteudo += "<table>";
+					conteudo += "<tr class='linha'>";
+					conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
+					conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
+					conteudo += "<td class='l01o1'>" + "    " + "</td>";
+					conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
+					conteudo += "<td class='l01o1'>" + "    " + "</td>";
+					conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
+					conteudo += "</tr>";
+
+					conteudo += "</table>";
+
+					c++;
+				}
+
+				$("#lista").html(conteudo);
 			}
 		})
 	})
 
-//chama a lista de Emails da Caixa de Entrada:
-$("#caixaEntrada").click(function(){
-	$.ajax({
-		type:"POST",
-		dataType: "json",
-		url:"../php/cxEntrada.php",
-		
-		success: function(retorno){
-
-			var conteudo = "";
-			var c = 0;
-
-			while(c < 13){
-				conteudo += "<table>";
-				conteudo += "<tr class='linha'>";
-				conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
-				conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";
-				conteudo += "<td class='l01o1'>" + "    " + "</td>";
-				conteudo += "<td class='l02'>" + "<b>" + retorno.assunto + "</b>" + "</td>";
-				conteudo += "<td class='l01o1'>" + "    " + "</td>";
-				conteudo += "<td class='l03s'>" + retorno.trecho + "</td>";
-				conteudo += "</tr>";
-
-				conteudo += "</table>";
-
-				c++;
-			}
-
-			$("#lista").html(conteudo);
-		}
-	})
 })
-
 //validação de login
 function entra(){
 
