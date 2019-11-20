@@ -1,0 +1,68 @@
+body{
+	background-image: url("../imagens/sakuraMsn.png");
+	background-repeat: no-repeat;
+	background-size: 850px 660px;
+	background-position: center;
+/*	background-color: #3CB371;
+*/	margin: 0px;
+}
+
+.areaMSN{
+	background-color: #66CDAA;
+	height: 381px;
+	width: 450px;
+	text-align: center;
+	margin: auto;
+	margin-top: 138px;
+}
+
+.destinatario{
+	width: 98%;
+	height: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
+
+.assunto{
+	width: 98%;
+	height: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 2px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
+
+.conteudo{
+	width: 98%;
+	height: 70%;
+	padding: 10px;
+	margin-top: 2px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
+
+.enviar{
+	float: right;
+	margin-right: 5px;
+	margin-left: 2.5px;
+	margin-top: 2px;
+	border-radius: 8px;
+	width: 80px;
+	height: 24px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
+
+.cancelar{
+	float: right;
+	margin-top: 2px;
+	border-radius: 8px;
+	width: 80px;
+	height: 24px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
