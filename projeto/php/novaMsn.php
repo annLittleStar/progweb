@@ -22,6 +22,6 @@
 	
 	$xml -> appendChild($dados);
 
-	$xml ->save("../xml/usuarios/usuario01/enviado/enviado01.xml");
+	$xml ->save("../xml/usuarios/usuario01/enviado/enviado02.xml");
 
 	echo json_encode("xml criado");

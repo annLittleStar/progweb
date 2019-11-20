@@ -10,8 +10,9 @@
 	$usuario = $_POST["user"];
 	$senha = $_POST["pass"];
 
-	if ($usuario == $u && $senha = $s) {
-		$retorna["resultado"] = "valido";
+	if ($usuario == $u && $senha == $s) {
+			$retorna["resultado"] = "valido";
+
 	}else {
 		$retorna["resultado"] = "invalido";
 	}
