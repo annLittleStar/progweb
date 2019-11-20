@@ -2,7 +2,7 @@
 table{
 	background-color: #66CDAA;
 	width: 100%;
-	height: 7%;
+	height: 6%;
 	font-size: 14px;
 	text-align: left;
 	/*	border-bottom-color: #3CB371;
@@ -11,29 +11,29 @@ table{
 	*/
 }
 .linha{
-	border-bottom-color: black;
+	border-bottom-color: #3CB371;
 }
 
 .img{
-	width: 10%;
+	width: 60%;
 }
 
-.l00{
+.l0{
 	width: 9%;
 }
 
-.l01{
+.l1{
 	width: 16%;
 }
 
-.l01o1{
+.l1o1{
 	width: 5%;
 }
 
-.l02{
+.l2{
 	width: 12%;
 }
 
-.l03{
+.l3{
 	width: 60%;
 }

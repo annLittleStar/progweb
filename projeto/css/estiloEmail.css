@@ -43,6 +43,24 @@ body{
 	cursor: pointer;
 }
 
+.menu3{
+	width: 200px;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+	border: none;
+	background: none;
+	float: left;
+	margin-top: 5px;
+	font-family:Centaur; 
+	font-size: 15px;
+}
+
+.menu3:hover{
+	cursor: pointer;
+}
+
 .novaMsn{
 	width: 150px;
 	height: 25px;
@@ -51,6 +69,11 @@ body{
 	background: none;
 	color: white;
 	font-family:Centaur; 
+}
+
+.novaMsn:hover{
+	color: blue;
+	cursor: pointer;
 }
 
 .div0{

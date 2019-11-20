@@ -54,7 +54,7 @@ $(document).ready(function(){
 				var c = 0;
 
 				while(c < 13){
-					conteudo += "<table>";
+					conteudo += "<table class='borda'>";
 					conteudo += "<tr class='linha'>";
 					conteudo += "<td class='l00'>" + "<img src = '../imagens/iconeMoca.png' class='img'>" + "</td>";
 					conteudo += "<td class='l01'>" + "<b>" + retorno.remetente + "</b>" + "</td>";

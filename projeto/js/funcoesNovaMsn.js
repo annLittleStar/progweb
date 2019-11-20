@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+//chamar função:
 	escreverMsn();
 
 	cancelarMsn();
@@ -10,20 +10,30 @@ $(document).ready(function(){
 function escreverMsn(){
 
 	$("#MSN").click(function(){
+		window.location.href = "novaMensagem.html";
+
+		var destinatario = $("#destinatario").val();
+		var Cc = $("#Cc").val();
+		var assunto = $("#assunto").val();
+		var conteudo = $("#conteudo").val();
+
 		$.ajax({
-			 type: "POST",
-			 dataType: "json",
-			 url:"../php/novaMsn.php",
+			type: "POST",
+			url: "../php/novaMsn.php",
+			dataType: "json",
+			data:{
 
-			 sucess: function(retorno){
+				desti: destinatario,
+				cc: Cc,
+				assun: assunto,
+				msn: MSN
+			},
+			sucess: function(retorno){
 
-			 		 var conteudo= "../paginas/novaMsn.html";
-
-				$("#lista").html(conteudo);
-			 }
+			}
 		})
-	})
-}
+
+		alert("Seu email foi enviado com sucesso!");
 
 function cancelarMsn(){
 
@@ -35,7 +45,7 @@ function cancelarMsn(){
 function enviarMsn(){
 
 	$("#envia").click(function(){
-		//Isso só vai acontecer dps de salvar tudo no xml
+		//Isso só vai acontecer dps de salvar tudo no xml]
 		window.location.href = "caixaDeEntrada.html";
 	})
 }
