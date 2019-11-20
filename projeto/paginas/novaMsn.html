@@ -6,20 +6,27 @@
 	<script type="text/javascript" src="../js/funcoesNovaMsn.js"></script>
 </head>
 <body>
-	<div class="areaMSN">
-<!--Verificar se não falta nenhuma info pedida-->
-		<div>
-			<input class="destinatario" id="destinatario" type="text" placeholder="Destinatario">
-		</div>
-		<div>
-			<input class="assunto" id="assunto" type="text" placeholder="Assunto">
-		</div>
-		<div>
-			<textarea class="conteudo" id="conteudo"></textarea>
-		</div>
-		<div>
-			<button class="enviar" id="envia">Envia</button>
-			<button class="cancelar" id="cancela">Cancela</button>
+	<div class="d01">
+		<div class="areaMSN">
+			<!--Verificar se não falta nenhuma info pedida-->
+			<div class="info">
+				<div>
+					<b class= "texto">Para:</b> <input class="destinatario" id="destinatario" type="text" placeholder="Destinatario">
+				</div>
+				<div>
+					<b class= "texto">Cc:</b> <input class="Cc" id="Cc" type="text" placeholder="E-mail a copiar">
+				</div>
+				<div>
+					<b class= "texto">Assunto:</b> <input class="assunto" id="assunto" type="text" placeholder="Assunto">
+				</div>
+				<div>
+					<button class="enviar" id="envia">Enviar</button>
+					<button class="cancelar" id="cancela">Cancelar</button>
+				</div>
+			</div>
+			<div class="conteudo0">
+				<textarea class="conteudo" id="conteudo" placeholder="Digite aqui o conteudo do seu email"></textarea>
+			</div>
 		</div>
 	</div>
 </body>

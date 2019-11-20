@@ -1,9 +1,29 @@
 $(document).ready(function(){
 
+	escreverMsn();
+
 	cancelarMsn();
 
 	enviarMsn();
 })
+
+function escreverMsn(){
+
+	$("#MSN").click(function(){
+		$.ajax({
+			 type: "POST",
+			 dataType: "json",
+			 url:"../php/novaMsn.php",
+
+			 sucess: function(retorno){
+
+			 		 var conteudo= "../paginas/novaMsn.html";
+
+				$("#lista").html(conteudo);
+			 }
+		})
+	})
+}
 
 function cancelarMsn(){
 
