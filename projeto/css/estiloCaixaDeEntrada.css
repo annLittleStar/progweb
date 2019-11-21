@@ -14,8 +14,9 @@ table{
 	border-bottom-color: black;
 }
 
-.img{
-	width: 10%;
+img{
+	height: 45px;
+	width: 45px;
 }
 
 .l00{

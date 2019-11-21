@@ -2,22 +2,50 @@
 <head>
 	<link rel="icon" type="image/x-icon" href="../imagens/sakuraIcon.ico">
 	<link rel="stylesheet" type="text/css" href="../css/estiloNovaMsn.css">
+	<link rel="stylesheet" type="text/css" href="../css/estiloEmail.css">
 	<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../js/funcoesNovaMsn.js"></script>
 </head>
 <body>
-	<div class="d01">
+	<!--Arrumar a parte de cima-->
+	<div class="divSuperior">
+		<div class="div1">
+			<div class="divMenu">
+				<div class="menuIcon"></div>
+				<div class="menuIcon"></div>
+				<div class="menuIcon"></div>
+			</div>
+			<input class="pesquisa" type="text" placeholder="Pesquisar">
+			<div class="usuario">
+				<a href="../index.html">
+					<img src="../imagens/logout.png" class="logout">
+				</a>
+			</div>
+		</div>
+		<div class="div2">
+			<a class="novaMsn" href="caixaDeEntrada.html" >Menu Inicial</a>
+			<!--				<button class="novaMsn" id="MSN">+ Nova Mensagem</button>-->
+			<b class="titulo">Nova mensagem</b>
+		</div>
+
 		<div class="areaMSN">
 			<!--Verificar se não falta nenhuma info pedida-->
 			<div class="info">
 				<div>
-					<b class= "texto">Para:</b> <input class="destinatario" id="destinatario" type="text" placeholder="Destinatario">
+					<b class="texto">De:</b>
+					<input class="t" id="de" type="text" value="usuario01@sakuramail.com">
 				</div>
 				<div>
-					<b class= "texto">Cc:</b> <input class="Cc" id="Cc" type="text" placeholder="E-mail a copiar">
+					<b class="texto">Para:</b>
+					<input class="t" id="destinatario" type="text" placeholder="Destinatario">
 				</div>
 				<div>
-					<b class= "texto">Assunto:</b> <input class="assunto" id="assunto" type="text" placeholder="Assunto">
+					<b class="texto">Cc:</b>
+					<input class="t" id="Cc" type="text" placeholder="E-mail a copiar">
+				</div>
+				<div>
+					<b class="texto">Assunto:</b>
+					<input class="t" id="assunto" type="text" placeholder="Assunto">
 				</div>
 				<div>
 					<button class="enviar" id="envia">Enviar</button>
@@ -28,6 +56,5 @@
 				<textarea class="conteudo" id="conteudo" placeholder="Digite aqui o conteudo do seu email"></textarea>
 			</div>
 		</div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>

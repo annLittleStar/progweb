@@ -68,7 +68,8 @@ body{
 	border: none;
 	background: none;
 	color: white;
-	font-family:Centaur; 
+	font-family:Centaur;
+	text-decoration: none;
 }
 
 .novaMsn:hover{
@@ -148,6 +149,10 @@ body{
 	overflow: hidden;
 	float: right;
 	position: relative;
+	background-image: url("../imagens/sakuraFundoMenu.png");
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: 550px 600px;
 }
 
 .divInferior{
@@ -216,8 +221,8 @@ body{
 .divLista0{
 	height: 100%;
 	width: 100%;
-	background-color: #3CB371;
-	overflow: auto;
+/*	background-color: #3CB371;
+*/	overflow: auto;
 }
 
 .titulo{
@@ -227,9 +232,18 @@ body{
 .usuario{
 	width: 30px;
 	height: 30px;
-	background-color: black;
+	background-color: white;
 	margin: 3px 0;
 	border-radius: 30px;
 	float: right;
 	margin-right: 5px;
+}
+
+.usuario:hover{
+	background-color: #B22222;
+}
+
+.logout{
+	width: 30px;
+	height: 30px;
 }

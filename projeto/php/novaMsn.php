@@ -1,27 +1,31 @@
 <?php
 
+//pronto
+	$de = $_POST["de"];
 	$destino = $_POST["desti"];
-	$email = $_POST["email"];
 	$cc = $_POST["cc"];
 	$assunto = $_POST["assun"];
-	$msn = $_POST["msn"];
+	$conteudo = $_POST["cont"];
 
 	$xml = new DOMDocument("1.0");
 
-	$dados = $xml -> createElement ("email", $email);
+	$enviado = $xml->createElement("enviado");
 
-	$xml_email = $xml -> createElement ("destino", $destino);
-	$xml_destino = $xml -> createElement ("destino", $destino);
-	$xml_cc = $xml -> createElement ("cc", $cc);
-	$xml_msn = $xml -> createElement ("msn", $msn);
+	$xml_de = $xml->createElement("de", $de);
+	$xml_destino = $xml->createElement("destino", $destino);
+	$xml_cc = $xml->createElement("cc", $cc);
+	$xml_assunto = $xml->createElement("assunto", $assunto);
+	$xml_cont = $xml->createElement("conteudo", $conteudo);
 
-	$dados -> appendChild($xml_destino);
-	$dados -> appendChild($xml_cc);
-	$dados -> appendChild($xml_assunto);
-	$dados -> appendChild($xml_msn);
+	$enviado->appendChild($xml_de);
+	$enviado->appendChild($xml_destino);
+	$enviado->appendChild($xml_cc);
+	$enviado->appendChild($xml_assunto);
+	$enviado->appendChild($xml_cont);
 	
-	$xml -> appendChild($dados);
+	$xml->appendChild($enviado);
 
-	$xml ->save("../xml/usuarios/usuario01/enviado/enviado02.xml");
+	$xml->save("../xml/usuarios/usuario01/email/enviado/enviado02.xml");
 
 	echo json_encode("xml criado");
+?>

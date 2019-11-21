@@ -1,39 +1,9 @@
 $(document).ready(function(){
 //chamar função:
-	escreverMsn();
+cancelarMsn();
 
-	cancelarMsn();
-
-	enviarMsn();
+enviarMsn();
 })
-
-function escreverMsn(){
-
-	$("#MSN").click(function(){
-		window.location.href = "novaMensagem.html";
-
-		var destinatario = $("#destinatario").val();
-		var Cc = $("#Cc").val();
-		var assunto = $("#assunto").val();
-		var conteudo = $("#conteudo").val();
-
-		$.ajax({
-			type: "POST",
-			url: "../php/novaMsn.php",
-			dataType: "json",
-			data:{
-
-				desti: destinatario,
-				cc: Cc,
-				assun: assunto,
-				msn: MSN
-			},
-			sucess: function(retorno){
-
-			}
-		})
-
-		alert("Seu email foi enviado com sucesso!");
 
 function cancelarMsn(){
 
@@ -45,7 +15,32 @@ function cancelarMsn(){
 function enviarMsn(){
 
 	$("#envia").click(function(){
-		//Isso só vai acontecer dps de salvar tudo no xml]
-		window.location.href = "caixaDeEntrada.html";
+
+		var de = $("#de").val();
+		var destinatario = $("#destinatario").val();
+		var Cc = $("#Cc").val();
+		var assunto = $("#assunto").val();
+		var conteudo = $("#conteudo").val();
+
+		$.ajax({
+			type: "POST",
+			url: "../php/novaMsn.php",
+			dataType: "json",
+			data:{
+				de: de,
+				desti: destinatario,
+				cc: Cc,
+				assun: assunto,
+				cont: conteudo
+			},
+			success:function(retorno){
+//				window.location.href = "caixaDeEntrada.html";
+				alert("Enviado com sucesso");
+				$("#destinatario").val("");
+				$("#Cc").val("");
+				$("#assunto").val("");
+				$("#conteudo").val("");
+			}
+		})
 	})
 }

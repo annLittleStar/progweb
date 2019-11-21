@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-	<lista>
-		<remetente>pessoa.people@sakuraMail.com</remetente>
-		<assunto>Assunto: Vocaloid</assunto>
-		<trecho>Traduzido do inglês-Vocaloid é um software de sintetizador de voz para canto...</trecho>
-	</lista>
+<lista>
+	<remetente>pessoa.people@sakuraMail.com</remetente>
+	<cc>umoutrousuario@sakuramail.com</cc>
+	<destinatario>usuario01@sakuramail.com</destinatario>
+	<assunto>Vocaloid</assunto>
+	<trecho>Traduzido do inglês-Vocaloid é um software de sintetizador de voz para canto...</trecho>
+</lista>
